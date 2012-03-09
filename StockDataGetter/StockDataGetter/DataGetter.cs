@@ -6,6 +6,7 @@ using NSoup;
 using NSoup.Select;
 using System.Collections;
 using NSoup.Nodes;
+using System.Net;
 
 namespace StockDataGetter
 {
@@ -37,12 +38,14 @@ namespace StockDataGetter
         public String[] excute()
         {
             ArrayList list = new ArrayList();
-            Document doc = NSoupClient.Parse(String.Format(baseUri, this.number, this.type));
+            String url = String.Format(baseUri, this.number, this.type);
+            WebClient wc = new WebClient();
+            Document doc = NSoupClient.Parse(wc.OpenRead(url), "utf-8");
             Element table = doc.Select("div.tab01 tbody").First();
             Elements trs = table.Select("tr");
-            foreach (Element tr in trs)
+            for (int i=1;i<trs.Count;i++)
             {
-                Elements tds = tr.Select("td");
+                Elements tds = trs[i].Select("td");
                 list.Add(tds[0].Text()+","+tds[1].Text());
             }
             String[] returnValue = new String[list.Count];
