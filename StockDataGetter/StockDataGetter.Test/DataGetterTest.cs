@@ -13,8 +13,9 @@ namespace StockDataGetter.Test
 
         [Test]public void Test1()
         {
-            DataGetter dg = new DataGetter("002604", DataType.总资产利润率);
+            DataGetter dg = new DataGetter("000716", DataType.GetValue("总资产利润率"));
             String[] d = dg.excute();
+            Assert.AreEqual(51, d.Length);
         }
     }
 }
