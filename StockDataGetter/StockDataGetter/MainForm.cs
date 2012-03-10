@@ -288,6 +288,7 @@ namespace StockDataGetter
         private void getBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             formStateUpdate(FormState.Wait);
+            MessageBox.Show("数据获取完成，已经写入文件");
         }
 
         private void homeLink_Click(object sender, EventArgs e)

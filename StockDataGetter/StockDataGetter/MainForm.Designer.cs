@@ -165,7 +165,7 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeLink});
-            this.statusStrip.Location = new System.Drawing.Point(0, 256);
+            this.statusStrip.Location = new System.Drawing.Point(0, 272);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(330, 22);
             this.statusStrip.TabIndex = 3;
@@ -183,7 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 278);
+            this.ClientSize = new System.Drawing.Size(330, 294);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.selectType);
             this.Controls.Add(this.setData);
@@ -192,7 +192,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "上市公司数据获取工具";
+            this.Text = "上市公司数据获取工具 测试版";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.setData.ResumeLayout(false);
             this.setData.PerformLayout();

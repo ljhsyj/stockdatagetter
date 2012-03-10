@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockDataGetter", "StockDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockDataGetter.Test", "StockDataGetter.Test\StockDataGetter.Test.csproj", "{938EF26B-0B0E-4C01-A799-DFF2D14457DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Files", "Web.Files\Web.Files.csproj", "{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -39,6 +41,16 @@ Global
 		{938EF26B-0B0E-4C01-A799-DFF2D14457DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{938EF26B-0B0E-4C01-A799-DFF2D14457DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{938EF26B-0B0E-4C01-A799-DFF2D14457DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Debug|x86.ActiveCfg = Debug|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Debug|x86.Build.0 = Debug|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Release|Any CPU.ActiveCfg = Release|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Release|x86.ActiveCfg = Release|x86
+		{D3CCC9A5-5CD6-487A-8D0A-425F9335C701}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
