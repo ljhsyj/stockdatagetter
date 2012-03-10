@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace StockDataGetter
 {
@@ -11,11 +12,15 @@ namespace StockDataGetter
 
         static DataType()
         {
-            type.Add("总资产利润率", "F028");
-            type.Add("主营业务利润率", "F029");
-            type.Add("净资产报酬率", "F030");
-            type.Add("总资产报酬率", "F031");
-            type.Add("销售毛利率", "F032");
+            using (StreamReader sr = new StreamReader("data.dat",Encoding.GetEncoding("utf-8")))
+            {
+                String line = String.Empty;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    type.Add(line.Split(',')[0], line.Split(',')[1]);
+                }
+                sr.Close();
+            }
         }
 
         public static String GetValue(String key)
