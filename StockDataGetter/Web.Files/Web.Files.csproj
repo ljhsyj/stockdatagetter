@@ -33,11 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="pics\user guide\t1.png" />
-    <Content Include="pics\user guide\t2.png" />
-    <Content Include="pics\user guide\t3.png" />
-    <Content Include="pics\user guide\t4.png" />
-    <Content Include="pics\user guide\t5.png" />
+    <Content Include="pics\userguide\t1.png" />
+    <Content Include="pics\userguide\t2.png" />
+    <Content Include="pics\userguide\t3.png" />
+    <Content Include="pics\userguide\t4.png" />
+    <Content Include="pics\userguide\t5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
